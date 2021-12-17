@@ -1,0 +1,292 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/PractitionerRole/6f4f303d-97b1-4101-bd24-ff3aa0fd82f4",
+      "resource": {
+        "active": true,
+        "healthcareService": [
+          {
+            "reference": "HealthcareService/6c86f53c-e69f-4ccc-92ff-47e1c5c65ef5"
+          }
+        ],
+        "id": "6f4f303d-97b1-4101-bd24-ff3aa0fd82f4",
+        "identifier": [
+          {
+            "system": "roleSourceId",
+            "value": "ProvServ_fb1c2fff0c5b_converge_service_line"
+          }
+        ],
+        "location": [
+          {
+            "reference": "Location/8a930a25-2e1d-451a-ae01-f1bb29f6eb38"
+          },
+          {
+            "reference": "Location/5b002a9e-2982-47d8-8dcc-69f86be183cb"
+          },
+          {
+            "reference": "Location/c21e8b6b-dab5-4575-bf28-4ec86e676edc"
+          },
+          {
+            "reference": "Location/8a930a25-2e1d-451a-ae01-f1bb29f6eb38"
+          },
+          {
+            "reference": "Location/5b002a9e-2982-47d8-8dcc-69f86be183cb"
+          },
+          {
+            "reference": "Location/c21e8b6b-dab5-4575-bf28-4ec86e676edc"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-07-02T15:13:21.468946+00:00",
+          "versionId": "MTYyNTIzODgwMTQ2ODk0NjAwMA"
+        },
+        "practitioner": {
+          "reference": "Practitioner/bbaf67eb-451a-493d-a0d0-42ef9e9b9d15"
+        },
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "test",
+                "code": "test"
+              },
+              {
+                "system": "patient-age-range",
+                "code": "10-42"
+              }
+            ]
+          }
+        ],
+        "specialty": [
+          {
+            "coding": [
+              {
+                "code": "394733009",
+                "system": "http://snomed.info/sct"
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/Practitioner/bbaf67eb-451a-493d-a0d0-42ef9e9b9d15",
+      "resource": {
+        "active": true,
+        "address": [
+          {
+            "city": "City",
+            "line": [
+              "Location"
+            ],
+            "postalCode": "12345",
+            "state": "KY",
+            "use": "work"
+          }
+        ],
+        "birthDate": "2021-06-22",
+        "communication": [
+          {
+            "coding": [
+              {
+                "code": "ar"
+              },
+              {
+                "code": "sgn"
+              }
+            ]
+          }
+        ],
+        "gender": "male",
+        "id": "bbaf67eb-451a-493d-a0d0-42ef9e9b9d15",
+        "identifier": [
+          {
+            "system": "userSourceId",
+            "value": "ProvServ_fb1c2fff0c5b"
+          },
+          {
+            "system": "username",
+            "value": "asddsa"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-07-02T15:13:17.664055+00:00",
+          "versionId": "MTYyNTIzODc5NzY2NDA1NTAwMA"
+        },
+        "name": [
+          {
+            "family": "Skywalker",
+            "given": [
+              "Anakin"
+            ]
+          }
+        ],
+        "resourceType": "Practitioner",
+        "telecom": [
+          {
+            "rank": 1,
+            "system": "email",
+            "value": "a@mail.com"
+          },
+          {
+            "rank": 1,
+            "system": "phone",
+            "value": "1234567890"
+          },
+          {
+            "rank": 2,
+            "system": "phone",
+            "value": "1234567890"
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/Location/5b002a9e-2982-47d8-8dcc-69f86be183cb",
+      "resource": {
+        "address": {
+          "state": "AK"
+        },
+        "id": "5b002a9e-2982-47d8-8dcc-69f86be183cb",
+        "identifier": [
+          {
+            "system": "locationSourceId",
+            "value": "AK"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-07-02T14:33:33.462948+00:00",
+          "versionId": "MTYyNTIzNjQxMzQ2Mjk0ODAwMA"
+        },
+        "name": "Alaska",
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn"
+            }
+          ]
+        },
+        "resourceType": "Location"
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/Location/8a930a25-2e1d-451a-ae01-f1bb29f6eb38",
+      "resource": {
+        "address": {
+          "state": "AL"
+        },
+        "id": "8a930a25-2e1d-451a-ae01-f1bb29f6eb38",
+        "identifier": [
+          {
+            "system": "locationSourceId",
+            "value": "AL"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-07-02T14:33:34.351365+00:00",
+          "versionId": "MTYyNTIzNjQxNDM1MTM2NTAwMA"
+        },
+        "name": "Alabama",
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn"
+            }
+          ]
+        },
+        "resourceType": "Location"
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/Location/c21e8b6b-dab5-4575-bf28-4ec86e676edc",
+      "resource": {
+        "address": {
+          "state": "AZ"
+        },
+        "id": "c21e8b6b-dab5-4575-bf28-4ec86e676edc",
+        "identifier": [
+          {
+            "system": "locationSourceId",
+            "value": "AZ"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-07-02T14:33:36.793248+00:00",
+          "versionId": "MTYyNTIzNjQxNjc5MzI0ODAwMA"
+        },
+        "name": "Arizona",
+        "physicalType": {
+          "coding": [
+            {
+              "code": "jdn"
+            }
+          ]
+        },
+        "resourceType": "Location"
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/HealthcareService/6c86f53c-e69f-4ccc-92ff-47e1c5c65ef5",
+      "resource": {
+        "id": "6c86f53c-e69f-4ccc-92ff-47e1c5c65ef5",
+        "identifier": [
+          {
+            "system": "practiceSourceId",
+            "value": "converge_service_line"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-07-05T08:33:06.619109+00:00",
+          "versionId": "MTYyNTQ3Mzk4NjYxOTEwOTAwMA"
+        },
+        "name": "Converge Service Line",
+        "resourceType": "HealthcareService",
+        "type": [
+          {
+            "coding": [
+              {
+                "code": "DEFAULT"
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ],
+  "link": [
+    {
+      "relation": "search",
+      "url": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/PractitionerRole/?_include=PractitionerRole%3Apractitioner&_include=PractitionerRole%3Alocation&_include=PractitionerRole%3Aservice&practitioner=bbaf67eb-451a-493d-a0d0-42ef9e9b9d15"
+    },
+    {
+      "relation": "first",
+      "url": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/PractitionerRole/?_include=PractitionerRole%3Apractitioner&_include=PractitionerRole%3Alocation&_include=PractitionerRole%3Aservice&practitioner=bbaf67eb-451a-493d-a0d0-42ef9e9b9d15"
+    },
+    {
+      "relation": "self",
+      "url": "https://healthcare.googleapis.com/v1/projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir/fhir/PractitionerRole/?_include=PractitionerRole%3Apractitioner&_include=PractitionerRole%3Alocation&_include=PractitionerRole%3Aservice&practitioner=bbaf67eb-451a-493d-a0d0-42ef9e9b9d15"
+    }
+  ],
+  "resourceType": "Bundle",
+  "total": 1,
+  "type": "searchset"
+}

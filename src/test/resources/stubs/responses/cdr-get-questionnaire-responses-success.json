@@ -1,0 +1,54 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/QuestionnaireResponse/77c1bca6-8009-4ea3-8a86-c41bcbdc23a4",
+      "resource": {
+        "encounter": {
+          "reference": "Encounter/ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+        },
+        "id": "77c1bca6-8009-4ea3-8a86-c41bcbdc23a4",
+        "item": [
+          {
+            "answer": [
+              {
+                "valueString": "Elephants are the largest existing land animals. Three species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. Elephantidae is the only surviving family of the order Proboscidea extinct > TEST"
+              }
+            ],
+            "linkId": "1",
+            "text": "What is your gender?"
+          }
+        ],
+        "meta": {
+          "lastUpdated": "2021-08-31T10:06:17.055681+00:00",
+          "versionId": "MTYzMDQwNDM3NzA1NTY4MTAwMA"
+        },
+        "resourceType": "QuestionnaireResponse",
+        "status": "completed",
+        "subject": {
+          "display": "Roel",
+          "reference": "Patient/2720f612-006f-4fde-91c3-045af0b3f86e"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ],
+  "link": [
+    {
+      "relation": "search",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/QuestionnaireResponse/?"
+    },
+    {
+      "relation": "first",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/QuestionnaireResponse/?"
+    },
+    {
+      "relation": "self",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/QuestionnaireResponse/?"
+    }
+  ],
+  "resourceType": "Bundle",
+  "total": 63,
+  "type": "searchset"
+}

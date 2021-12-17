@@ -1,0 +1,25 @@
+{
+  "entry": [
+    {
+      "resource": {
+        "id": "80c23dfe4a53",
+        "identifier": [
+          {
+            "type": {
+              "text": "encounterId"
+            },
+            "value": "80c23dfe4a53"
+          }
+        ],
+        "resourceType": "Encounter",
+        "status": "arrived"
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ],
+  "resourceType": "Bundle",
+  "total": 1,
+  "type": "searchset"
+}

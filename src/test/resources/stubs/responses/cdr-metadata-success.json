@@ -1,0 +1,19 @@
+{
+  "date": "2021-07-05",
+  "description": "FHIR capability statement for the FHIR store specified by the request.",
+  "experimental": true,
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json"
+  ],
+  "id": "amwelltestfhir",
+  "kind": "instance",
+  "patchFormat": [
+    "application/json-patch+json"
+  ],
+  "publisher": "Google",
+  "resourceType": "CapabilityStatement",
+  "status": "draft",
+  "url": "projects/third-extension-313320/locations/us-central1/datasets/amwelltest/fhirStores/amwelltestfhir",
+  "version": "20210705"
+}

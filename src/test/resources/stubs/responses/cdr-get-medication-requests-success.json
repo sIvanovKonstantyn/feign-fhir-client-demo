@@ -1,0 +1,476 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/40b442e6-cc50-4126-a11c-8899b6b23e2b",
+      "resource": {
+        "authoredOn": "2021-08-24T17:40:58.000Z",
+        "dispenseRequest": {
+          "expectedSupplyDuration": {
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "day",
+            "value": 0
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 10
+          }
+        },
+        "dosageInstruction": [
+          {
+            "route": {
+              "text": "by mouth"
+            },
+            "text": "Take 3 tablet",
+            "timing": {
+              "code": {
+                "text": "twice a day"
+              }
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+        },
+        "id": "40b442e6-cc50-4126-a11c-8899b6b23e2b",
+        "identifier": [
+          {
+            "system": "DrFirst",
+            "value": "SB-26352168116"
+          }
+        ],
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "100000091407",
+              "display": "IBU-200 200 mg tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "310965",
+              "display": "IBU-200 200 mg tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "SCD",
+              "display": "IBU-200 200 mg tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "IBU-200 200 mg tablet"
+        },
+        "meta": {
+          "lastUpdated": "2021-08-31T20:02:24.863826+00:00",
+          "versionId": "MTYzMDQ0MDE0NDg2MzgyNjAwMA"
+        },
+        "requester": {
+          "display": "David Proveydzdf",
+          "reference": "Practitioner/ffc2f278-cfe9-4dd8-9114-a29c0ac783cd"
+        },
+        "resourceType": "MedicationRequest",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/2720f612-006f-4fde-91c3-045af0b3f86e"
+        },
+        "substitution": {
+          "allowedBoolean": true
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/cac52fad-3bf5-425d-bf77-b2ae29d57bed",
+      "resource": {
+        "authoredOn": "2021-08-19T20:29:57.000Z",
+        "dispenseRequest": {
+          "expectedSupplyDuration": {
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "day",
+            "value": 4
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 4
+          }
+        },
+        "dosageInstruction": [
+          {
+            "route": {
+              "text": "by mouth"
+            },
+            "text": "Take 1 capsule",
+            "timing": {
+              "code": {
+                "text": "once a day"
+              }
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+        },
+        "id": "cac52fad-3bf5-425d-bf77-b2ae29d57bed",
+        "identifier": [
+          {
+            "system": "DrFirst",
+            "value": "SB-26352143893"
+          }
+        ],
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "24144",
+              "display": "ibuprofen 200 mg capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "310964",
+              "display": "ibuprofen 200 mg capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "SCD",
+              "display": "ibuprofen 200 mg capsule",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "ibuprofen 200 mg capsule"
+        },
+        "meta": {
+          "lastUpdated": "2021-08-31T20:02:24.096946+00:00",
+          "versionId": "MTYzMDQ0MDE0NDA5Njk0NjAwMA"
+        },
+        "requester": {
+          "display": "David Proveydzdf",
+          "reference": "Practitioner/ffc2f278-cfe9-4dd8-9114-a29c0ac783cd"
+        },
+        "resourceType": "MedicationRequest",
+        "status": "stopped",
+        "subject": {
+          "reference": "Patient/2720f612-006f-4fde-91c3-045af0b3f86e"
+        },
+        "substitution": {
+          "allowedBoolean": true
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/5e2ba625-0329-4ed0-8197-515215d6ffef",
+      "resource": {
+        "authoredOn": "2021-08-20T05:23:45.000Z",
+        "dispenseRequest": {
+          "expectedSupplyDuration": {
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "day",
+            "value": 1
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 15
+          }
+        },
+        "dosageInstruction": [
+          {
+            "route": {
+              "text": "intravenously"
+            },
+            "text": "Inject 15 ml",
+            "timing": {
+              "code": {
+                "text": "once a day"
+              }
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+        },
+        "id": "5e2ba625-0329-4ed0-8197-515215d6ffef",
+        "identifier": [
+          {
+            "system": "DrFirst",
+            "value": "SB-26352145681"
+          }
+        ],
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "13100000106867",
+              "display": "Paraplatin 10 mg/mL intravenous solution",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "686161",
+              "display": "Paraplatin 10 mg/mL intravenous solution",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "SBD",
+              "display": "Paraplatin 10 mg/mL intravenous solution",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "Paraplatin 10 mg/mL intravenous solution"
+        },
+        "meta": {
+          "lastUpdated": "2021-08-31T20:02:23.454243+00:00",
+          "versionId": "MTYzMDQ0MDE0MzQ1NDI0MzAwMA"
+        },
+        "requester": {
+          "display": "David Proveydzdf",
+          "reference": "Practitioner/ffc2f278-cfe9-4dd8-9114-a29c0ac783cd"
+        },
+        "resourceType": "MedicationRequest",
+        "status": "stopped",
+        "subject": {
+          "reference": "Patient/2720f612-006f-4fde-91c3-045af0b3f86e"
+        },
+        "substitution": {
+          "allowedBoolean": true
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/c06f5b42-1e7d-4467-a22f-4ddd22746d0f",
+      "resource": {
+        "authoredOn": "2021-08-24T18:34:36.000Z",
+        "dispenseRequest": {
+          "expectedSupplyDuration": {
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "day",
+            "value": 0
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 10
+          }
+        },
+        "dosageInstruction": [
+          {
+            "route": {
+              "text": "by mouth"
+            },
+            "text": "Take 3 tablet",
+            "timing": {
+              "code": {
+                "text": "twice a day"
+              }
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+        },
+        "eventHistory": [
+          {
+            "display": "EDQ: 08/24/2021 19:00:33 EDT",
+            "identifier": {
+              "value": "EDQ"
+            }
+          },
+          {
+            "display": "EDNV: 08/24/2021 19:00:34 EDT",
+            "identifier": {
+              "value": "EDNV"
+            }
+          },
+          {
+            "display": "FDQ: 08/24/2021 20:00:46 EDT",
+            "identifier": {
+              "value": "FDQ"
+            }
+          },
+          {
+            "display": "EDQ: 08/25/2021 14:53:17 EDT",
+            "identifier": {
+              "value": "EDQ"
+            }
+          },
+          {
+            "display": "EDNV: 08/25/2021 14:53:22 EDT",
+            "identifier": {
+              "value": "EDNV"
+            }
+          },
+          {
+            "display": "FDQ: 08/25/2021 15:53:22 EDT",
+            "identifier": {
+              "value": "FDQ"
+            }
+          },
+          {
+            "display": "EDF: 08/25/2021 19:20:30 EDT",
+            "identifier": {
+              "value": "EDF"
+            }
+          },
+          {
+            "display": "EDF: 08/26/2021 15:00:26 EDT",
+            "identifier": {
+              "value": "EDF"
+            }
+          }
+        ],
+        "id": "c06f5b42-1e7d-4467-a22f-4ddd22746d0f",
+        "identifier": [
+          {
+            "system": "DrFirst",
+            "value": "SB-26352168481"
+          }
+        ],
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "100000090331",
+              "display": "IBU 400 mg tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "206905",
+              "display": "IBU 400 mg tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "SBD",
+              "display": "IBU 400 mg tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "IBU 400 mg tablet"
+        },
+        "meta": {
+          "lastUpdated": "2021-08-31T20:02:22.809170+00:00",
+          "versionId": "MTYzMDQ0MDE0MjgwOTE3MDAwMA"
+        },
+        "requester": {
+          "display": "David Proveydzdf",
+          "reference": "Practitioner/ffc2f278-cfe9-4dd8-9114-a29c0ac783cd"
+        },
+        "resourceType": "MedicationRequest",
+        "status": "active",
+        "subject": {
+          "reference": "Patient/2720f612-006f-4fde-91c3-045af0b3f86e"
+        },
+        "substitution": {
+          "allowedBoolean": true
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/a54f568f-589c-467f-932a-d7c9a23a06f7",
+      "resource": {
+        "authoredOn": "2021-08-23T17:30:32.000Z",
+        "dispenseRequest": {
+          "expectedSupplyDuration": {
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "day",
+            "value": 6
+          },
+          "numberOfRepeatsAllowed": 0,
+          "quantity": {
+            "value": 6
+          }
+        },
+        "dosageInstruction": [
+          {
+            "route": {
+              "text": "by mouth"
+            },
+            "text": "Take 1 tablet",
+            "timing": {
+              "code": {
+                "text": "every night"
+              }
+            }
+          }
+        ],
+        "encounter": {
+          "reference": "Encounter/ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+        },
+        "id": "a54f568f-589c-467f-932a-d7c9a23a06f7",
+        "identifier": [
+          {
+            "system": "DrFirst",
+            "value": "SB-26352161212"
+          }
+        ],
+        "intent": "plan",
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "code": "100000078730",
+              "display": "Zubsolv 0.7 mg-0.18 mg sublingual tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "1864414",
+              "display": "Zubsolv 0.7 mg-0.18 mg sublingual tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            },
+            {
+              "code": "SBD",
+              "display": "Zubsolv 0.7 mg-0.18 mg sublingual tablet",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+            }
+          ],
+          "text": "Zubsolv 0.7 mg-0.18 mg sublingual tablet"
+        },
+        "meta": {
+          "lastUpdated": "2021-08-31T20:01:08.205369+00:00",
+          "versionId": "MTYzMDQ0MDA2ODIwNTM2OTAwMA"
+        },
+        "requester": {
+          "display": "David Proveydzdf",
+          "reference": "Practitioner/ffc2f278-cfe9-4dd8-9114-a29c0ac783cd"
+        },
+        "resourceType": "MedicationRequest",
+        "status": "draft",
+        "subject": {
+          "reference": "Patient/0ef6dc61-e717-419d-9448-227eaaef2e37"
+        },
+        "substitution": {
+          "allowedBoolean": true
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ],
+  "link": [
+    {
+      "relation": "search",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/?encounter=ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+    },
+    {
+      "relation": "first",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/?encounter=ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+    },
+    {
+      "relation": "self",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/MedicationRequest/?encounter=ed4296fb-91e2-4f0a-a869-a935f9c0a2ef"
+    }
+  ],
+  "resourceType": "Bundle",
+  "total": 5,
+  "type": "searchset"
+}

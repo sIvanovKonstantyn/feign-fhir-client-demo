@@ -1,0 +1,119 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "link": [
+    {
+      "relation": "search",
+      "url": "https://api.dev.amwell.systems/fhir-proxy/v2/cdr/ChargeItem/?context=aad01088-9ed0-41dd-8999-299abc33174f"
+    },
+    {
+      "relation": "first",
+      "url": "https://api.dev.amwell.systems/fhir-proxy/v2/cdr/ChargeItem/?context=aad01088-9ed0-41dd-8999-299abc33174f"
+    },
+    {
+      "relation": "self",
+      "url": "https://api.dev.amwell.systems/fhir-proxy/v2/cdr/ChargeItem/?context=aad01088-9ed0-41dd-8999-299abc33174f"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://api.dev.amwell.systems/fhir-proxy/v2/cdr/ChargeItem/4d4a524d-31e3-4431-b696-fdd0ec2f110d",
+      "resource": {
+        "id": "4d4a524d-31e3-4431-b696-fdd0ec2f110d",
+        "meta": {
+          "versionId": "MTYzODkzNDI0NTM1NTcwNzAwMA",
+          "lastUpdated": "2021-12-08T03:30:45.355707+00:00"
+        },
+        "resourceType": "ChargeItem",
+        "status": "planned",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "99422"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/299d9a0e-febe-41ea-9a9c-04c4494fdefd"
+        },
+        "context": {
+          "reference": "Encounter/aad01088-9ed0-41dd-8999-299abc33174f"
+        },
+        "priceOverride": {
+          "value": 79,
+          "currency": "USD"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://api.dev.amwell.systems/fhir-proxy/v2/cdr/ChargeItem/8ccab534-0da4-4376-a546-2e4d615fa01f",
+      "resource": {
+        "id": "8ccab534-0da4-4376-a546-2e4d615fa01f",
+        "meta": {
+          "versionId": "MTYzODkzNDE2NjI4NjY0NjAwMA",
+          "lastUpdated": "2021-12-08T03:29:26.286646+00:00"
+        },
+        "resourceType": "ChargeItem",
+        "status": "planned",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "99422"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/299d9a0e-febe-41ea-9a9c-04c4494fdefd"
+        },
+        "context": {
+          "reference": "Encounter/aad01088-9ed0-41dd-8999-299abc33174f"
+        },
+        "priceOverride": {
+          "value": 79,
+          "currency": "USD"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://api.dev.amwell.systems/fhir-proxy/v2/cdr/ChargeItem/6cede1f9-8594-44dd-8e60-46e5c33afdd0",
+      "resource": {
+        "id": "6cede1f9-8594-44dd-8e60-46e5c33afdd0",
+        "meta": {
+          "versionId": "MTYzODkzNDE1NTUyNjEzNjAwMA",
+          "lastUpdated": "2021-12-08T03:29:15.526136+00:00"
+        },
+        "resourceType": "ChargeItem",
+        "status": "planned",
+        "code": {
+          "coding": [
+            {
+              "system": "http://www.ama-assn.org/go/cpt",
+              "code": "99422"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/299d9a0e-febe-41ea-9a9c-04c4494fdefd"
+        },
+        "context": {
+          "reference": "Encounter/aad01088-9ed0-41dd-8999-299abc33174f"
+        },
+        "priceOverride": {
+          "value": 79,
+          "currency": "USD"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}

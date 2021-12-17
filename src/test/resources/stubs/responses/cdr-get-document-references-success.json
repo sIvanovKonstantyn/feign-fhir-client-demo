@@ -1,0 +1,68 @@
+{
+  "entry": [
+    {
+      "fullUrl": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/DocumentReference/749f2e14-c370-4b48-8197-6e72c85f36bb",
+      "resource": {
+        "author": [
+          {
+            "reference": "Practitioner/4e18263d-7f40-4b4c-a274-264d8357fc9e"
+          }
+        ],
+        "content": [
+          {
+            "attachment": {
+              "contentType": "text/plain; charset=utf-8",
+              "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg",
+              "title": "                                         "
+            }
+          }
+        ],
+        "date": "2021-09-01T06:51:17.292Z",
+        "docStatus": "preliminary",
+        "id": "749f2e14-c370-4b48-8197-6e72c85f36bb",
+        "meta": {
+          "lastUpdated": "2021-09-01T06:51:16.589428+00:00",
+          "versionId": "MTYzMDQ3OTA3NjU4OTQyODAwMA"
+        },
+        "resourceType": "DocumentReference",
+        "status": "current",
+        "subject": {
+          "reference": "Patient/d17014ea-ad8d-4bb8-9924-49fb227f9473"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "55107-7",
+              "display": "Addendum Document",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ],
+  "link": [
+    {
+      "relation": "search",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/DocumentReference/?"
+    },
+    {
+      "relation": "next",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/DocumentReference/?&_page_token=Cjj3YSbCTv%2F%2F%2F%2F%2BABcppqmYXBQD%2FAf%2F%2BYTc3YWYxZDExM2ZhOWE2NTMxN2EyZTdkY2JmMGFmOTIAARBkIfp7n2jesxm7OQAAAACxPdmeSAFQAFoLCVVieH7YpGEvEANggMnKtQY%3D"
+    },
+    {
+      "relation": "first",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/DocumentReference/?"
+    },
+    {
+      "relation": "self",
+      "url": "https://api.qa.amwell.systems/fhir-proxy/v2/cdr/DocumentReference/?"
+    }
+  ],
+  "resourceType": "Bundle",
+  "total": 1934,
+  "type": "searchset"
+}
