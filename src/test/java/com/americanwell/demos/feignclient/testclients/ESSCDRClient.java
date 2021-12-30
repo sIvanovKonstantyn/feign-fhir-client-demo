@@ -1,6 +1,6 @@
-package com.home.demos.feignclient.testclients;
+package com.americanwell.demos.feignclient.testclients;
 
-import com.home.demos.feignclient.CDRClient;
+import com.americanwell.demos.feignclient.CDRClient;
 import org.hl7.fhir.r4.model.*;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.home.demos.feignclient;
+package com.americanwell.demos.feignclient;
 
 import ca.uhn.fhir.rest.api.MethodOutcome;
 import ca.uhn.fhir.rest.client.api.IGenericClient;
@@ -22,6 +22,10 @@ public class DynamicCDRClientInvocationHandler implements InvocationHandler {
     private static final String UPDATE_METHOD = "update";
     private static final String BY = "By";
     private static final String AND = "And";
+    private static final String TO_STRING_METHOD = "toString";
+    private static final String HASH_CODE_METHOD = "hashCode";
+    private static final String EQUALS_METHOD = "equals";
+    private static final String GET_CLASS_METHOD = "getClass";
 
     private IGenericClient client;
 
@@ -58,6 +62,14 @@ public class DynamicCDRClientInvocationHandler implements InvocationHandler {
             return save(args);
         } else if (UPDATE_METHOD.equals(methodName)) {
             return update(args);
+        } else if (TO_STRING_METHOD.equals(methodName)) {
+            return super.toString();
+        } else if (HASH_CODE_METHOD.equals(methodName)) {
+            return super.hashCode();
+        } else if (EQUALS_METHOD.equals(methodName)) {
+            return super.equals(args[0]);
+        } else if (GET_CLASS_METHOD.equals(methodName)) {
+            return super.getClass();
         }
 
         throw new IllegalArgumentException(String.format("method %s is not supported", methodName));

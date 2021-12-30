@@ -1,11 +1,11 @@
-package com.home.demos.feignclient;
+package com.americanwell.demos.feignclient;
 
+import com.americanwell.demos.feignclient.config.FhirClientConfig;
+import com.americanwell.demos.feignclient.testclients.ESSCDRClient;
+import com.americanwell.demos.feignclient.utils.ResourceUtils;
+import com.americanwell.demos.feignclient.utils.WireMockInitializer;
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.WireMock;
-import com.home.demos.feignclient.config.FhirClientConfig;
-import com.home.demos.feignclient.testclients.ESSCDRClient;
-import com.home.demos.feignclient.utils.ResourceUtils;
-import com.home.demos.feignclient.utils.WireMockInitializer;
 import org.hl7.fhir.r4.model.Communication;
 import org.hl7.fhir.r4.model.IdType;
 import org.hl7.fhir.r4.model.Resource;
@@ -20,9 +20,11 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(classes = {CDRClientRegistrar.class, FhirClientConfig.class})
+@EnableCDRClients
+@SpringBootTest(classes = {FhirClientConfig.class})
 @ContextConfiguration(initializers = WireMockInitializer.class)
 class CDRClientITest {
+
 
     private static final String GET_METADATA_SUCCESS_RESPONSE_PATH = "stubs/responses/cdr-metadata-success.json";
     private static final String GET_ENCOUNTER_SUCCESS_RESPONSE_PATH = "stubs/responses/cdr-get-encounter-success.json";
@@ -66,6 +68,11 @@ class CDRClientITest {
     @BeforeEach
     void setUp() {
         var metadata = ResourceUtils.readFromClasspath(GET_METADATA_SUCCESS_RESPONSE_PATH);
+
+        server.stubFor(
+                WireMock.post("/auth/realms/services/protocol/openid-connect/token").willReturn(WireMock.okJson("{\"access_token\":\"token\"}"))
+        );
+
         server.stubFor(
                 WireMock.get("/metadata").willReturn(WireMock.okJson(metadata))
         );

@@ -1,4 +1,4 @@
-package com.home.demos.feignclient.utils;
+package com.americanwell.demos.feignclient.utils;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
@@ -19,6 +19,10 @@ public class WireMockInitializer implements ApplicationContextInitializer<Config
 
         TestPropertyValues.of(
                 "cdr.base-url=" + wireMockServer.baseUrl()
+        ).applyTo(applicationContext.getEnvironment());
+
+        TestPropertyValues.of(
+                "token-url=" + wireMockServer.baseUrl() + "/auth/realms/services/protocol/openid-connect/token"
         ).applyTo(applicationContext.getEnvironment());
 
         applicationContext.addApplicationListener(applicationEvent -> {

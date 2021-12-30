@@ -1,4 +1,4 @@
-package com.home.demos.feignclient.utils;
+package com.americanwell.demos.feignclient.utils;
 
 import org.springframework.core.io.ClassPathResource;
 

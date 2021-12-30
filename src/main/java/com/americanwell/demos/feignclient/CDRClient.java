@@ -1,4 +1,4 @@
-package com.home.demos.feignclient;
+package com.americanwell.demos.feignclient;
 
 import org.springframework.stereotype.Indexed;
 
