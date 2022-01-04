@@ -21,7 +21,8 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.*;
+import java.util.List;
+import java.util.Optional;
 
 @Slf4j
 @Configuration
@@ -39,12 +40,17 @@ public class FhirClientConfig {
 
     @Bean
     @Scope(scopeName = ConfigurableBeanFactory.SCOPE_PROTOTYPE, proxyMode = ScopedProxyMode.INTERFACES)
-    public IGenericClient client(Environment environment) {
-        IGenericClient client = FhirContext.forR4().newRestfulGenericClient(environment.getProperty("cdr.base-url"));
+    public IGenericClient client(Environment environment, FhirContext fhirContext) {
+        IGenericClient client = fhirContext.newRestfulGenericClient(environment.getProperty("cdr.base-url"));
 
         client.registerInterceptor(new BearerTokenAuthInterceptor(tokenResolver(environment).getToken()));
 
         return client;
+    }
+
+    @Bean
+    public FhirContext fhirContext() {
+        return FhirContext.forR4();
     }
 
     private FhirProxyTokenResolver tokenResolver(Environment environment) {
@@ -71,7 +77,6 @@ public class FhirClientConfig {
             return token;
         };
     }
-
 
 
     @Data
